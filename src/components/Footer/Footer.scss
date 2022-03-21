@@ -1,0 +1,74 @@
+@use "../../scss/" as *;
+
+.footer {
+    background-color: $black-color;
+    margin-top: 7rem;
+    color: $white-color;
+    padding: 5rem 0 9rem;
+
+    &__wrapper {
+        .logo {
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+        }
+
+        .menu__list {
+            @include flex(center, center);
+            gap: 2rem;
+            flex-wrap: wrap;
+
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 4rem;
+
+            .menu__item {
+                cursor: pointer;
+                position: relative;
+
+                & > a {
+                    color: $white-color;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -10%;
+                    left: 0;
+
+                    width: 0;
+                    height: 0.2rem;
+                    background-color: $white-color;
+                    transition: width 0.3s ease-in-out;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .social__icons {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+
+            .icon {
+                margin-right: 2rem;
+
+                &:nth-last-child(1) {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .copyright {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    }
+}

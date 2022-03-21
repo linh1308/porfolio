@@ -1,0 +1,109 @@
+@use "../../scss/" as *;
+
+.projects {
+    margin-top: 7rem;
+    background-color: $black-color;
+    
+    &__wrapper {
+        color: $white-color;
+        padding-bottom: 7rem;
+
+        .title {
+            padding-top: 5rem;
+            font-size: 3rem;
+            text-align: center;
+
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 5rem;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -20%;
+                left: 50%;
+
+                transform: translateX(-50%);
+                width: 10%;
+                height: 0.2rem;
+                background-color: $white-color;
+            }
+        }
+
+        .project__list {
+            @include flex(center, flex-start);
+            flex-wrap: wrap;
+            gap: 3rem;
+
+            .project__item {
+                max-width: 40rem;
+                max-height: 60rem;
+                padding-bottom: 2rem;
+
+                &--image {
+                    overflow: hidden;
+                    
+                    & > img {
+                        max-width: 40rem;
+                        border-radius: 1rem;
+                        transition: transform 0.2s ease-in-out;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                &--content {
+                    height: 16rem;
+                    margin-bottom: 1rem;
+
+                    .name {
+                        font-size: 2.5rem;
+                        font-weight: 500;
+                        text-transform: capitalize;
+
+                        text-align: center;
+                        margin: 1rem 0;
+                    }
+
+                    .desc, .api, .technologies {
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        margin-bottom: 1rem;
+                        text-transform: capitalize;
+                    }
+                }
+
+                &--link {
+                    & > a {
+                        color: $white-color;
+                        font-size: 1.5rem;
+                        font-weight: 500;
+
+                        margin-right: 2rem;
+                        text-transform: uppercase;
+                        position: relative;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            bottom: -5%;
+                            left: 0;
+
+                            width: 0;
+                            height: 0.2rem;
+                            background-color: $white-color;
+                            transition: width 0.2s ease-in-out;
+                        }
+
+                        &:hover::before {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

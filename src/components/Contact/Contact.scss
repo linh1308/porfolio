@@ -1,0 +1,84 @@
+@use "../../scss/" as *;
+
+.contact {
+    margin-top: 7rem;
+    @include flex(center, flex-start);
+
+    &__wrapper {
+        width: 60%;
+        .title {
+            margin-bottom: 5rem;
+            font-size: 3rem;
+            font-weight: 600;
+
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -20%;
+                left: 50%;
+
+                transform: translateX(-50%);
+                width: 15%;
+                height: 0.2rem;
+                background-color: $gray-color;
+            }
+        }
+
+        .contact__form {
+            input,
+            textarea {
+                width: 100%;
+                margin-bottom: 2rem;
+                border-radius: 0.5rem;
+                
+                border: 1px solid $black-color;
+                display: block;
+            }
+
+            & > input {
+                padding: 1.5rem 1rem;
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: $black-color;
+            }
+
+            & > textarea {
+                height: 20rem;
+                padding: 1.5rem 1rem;
+                resize: none;
+
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: $black-color;
+            }
+
+            .btn {
+                font-size: 1.5rem;
+                font-weight: 500;
+                text-transform: uppercase;
+
+                padding: 1rem 2rem;
+                background-color: $black-color;
+                color: $white-color;
+
+                border-radius: 0.5rem;
+                border: 1.5px solid $black-color;
+                transition: background-color 0.2s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $white-color;
+                    color: $black-color;
+                }
+            }
+        }
+
+        @include w920 {
+            width: 90%;
+        }
+    }
+}

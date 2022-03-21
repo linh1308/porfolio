@@ -1,0 +1,98 @@
+@use '../../scss/' as *;
+
+.about {
+    margin-top: 5rem;
+
+    &__wrapper {
+        .title {
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 600;
+
+            margin-bottom: 5rem;
+            text-align: center;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -20%;
+                left: 50%;
+                transform: translateX(-50%);
+
+                width: 10%;
+                height: 0.2rem;
+                background-color: $gray-color;
+            }
+        }
+
+        .about__content {
+            @include flex(center, center);
+            gap: 7rem;
+            font-size: 2rem;
+            font-weight: 400;
+
+            padding: 3rem 0;
+            box-shadow: 1rem 1.5rem 1.5rem rgba($color: #333, $alpha: 0.3);
+
+            .information {
+                position: relative;
+
+                &__item {
+                    @include flex(flex-start, center);
+                    gap: 1.5rem;
+                    flex-wrap: wrap;
+                    margin-bottom: 1rem;
+
+                    @include w600 {
+                        flex-direction: column;
+                        margin-top: 1.5rem;
+                        text-align: center;
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: -13%;
+                    transform: translateY(-50%);
+
+                    width: 0.2rem;
+                    height: 50%;
+                    background-color: $gray-color;
+
+                    @include w720 {
+                        width: 50%;
+                        height: 0.2rem;
+                        top: 106%;
+                        right: 50%;
+                        transform: translateX(50%);
+                    }
+                }
+
+                @include w720 {
+                    width: 100%;
+                    flex-wrap: wrap;
+                    word-wrap: break-word;
+                }
+            }
+
+            .desc {
+                width: 40%;
+                @include w720 {
+                    width: 95%;
+                }
+
+                @include w600 {
+                    text-align: center;
+                }
+            }
+
+            @include w720 {
+                flex-direction: column;
+
+            }
+        }
+    }
+}

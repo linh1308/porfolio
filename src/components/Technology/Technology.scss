@@ -1,0 +1,46 @@
+@use '../../scss/' as *;
+
+.technology {
+    margin-top: 7rem;
+    &__wrapper {
+        width: 100%;
+
+        .title {
+            font-size: 3rem;
+            font-weight: 600;
+            text-transform: uppercase;
+
+            text-align: center;
+            margin-bottom: 5rem;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -20%;
+                left: 50%;
+                transform: translateX(-50%);
+
+                width: 10%;
+                height: 0.2rem;
+                background-color: $gray-color;
+            }
+        }
+
+        .technology__content {
+            text-align: center;
+            font-size: 6rem;
+            @include flex(center, center);
+            gap: 3rem;
+            
+            .icon {
+                cursor: pointer;
+                transition: transform 0.2s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
