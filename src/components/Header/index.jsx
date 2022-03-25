@@ -29,7 +29,7 @@ const Header = () => {
 		<div className='header'>
 			<div className="container header__wrapper">
 				<div className="logo">
-					porfolio
+					portfolio
 				</div>
 
 				<div className="navbar">

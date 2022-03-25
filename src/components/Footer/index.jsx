@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<div className='footer'>
 			<div className="container footer__wrapper">
-				<div className="logo">Porfolio</div>
+				<div className="logo">Portfolio</div>
 				<ul className='menu__list'>
 					<li className="menu__item"><a href="#home">Home</a></li>
 					<li className="menu__item"><a href="#about">About</a></li>
