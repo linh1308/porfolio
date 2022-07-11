@@ -1,6 +1,6 @@
 import React from 'react';
 import Typical from 'react-typical';
-import avatar from '../../images/avatar.png';
+import avatar from '../../images/profile-img.jpg';
 import './Home.scss';
 
 const Home = () => {
