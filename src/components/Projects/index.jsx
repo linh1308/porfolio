@@ -18,7 +18,7 @@ const Projects = () => {
 						<div className="project__item--content">
 							<div className="name">Todo list</div>
 							<div className="desc">Features: Add, edit, delete, check task completed</div>
-							<div className="technologies">Technology: ReactJS, Redux Toolkit, Sass</div>
+							<div className="technologies">Technology: ReactJS, Redux Toolkit, SCSS</div>
 						</div>
 
 						<div className="project__item--link">
@@ -35,7 +35,7 @@ const Projects = () => {
 							<div className="name">Movie App</div>
 							<div className="desc">Features: Watch Trailer, Search, See Detail Movie</div>
 							<div className="api">API: TMDB</div>
-							<div className="technologies">Technology: ReactJS, Sass, Swiper</div>
+							<div className="technologies">Technology: ReactJS, SCSS, Swiper</div>
 						</div>
 
 						<div className="project__item--link">
@@ -52,7 +52,7 @@ const Projects = () => {
 							<div className="name">Ecommerce App</div>
 							<div className="desc">Features: Add Product To Cart, Edit Quantity, Delete Product In Cart, Sort By Type, See Detail Product</div>
 							<div className="api">API: Fakestore</div>
-							<div className="technologies">Technology: ReactJS, Redux Toolkit, Sass</div>
+							<div className="technologies">Technology: ReactJS, Redux Toolkit, SCSS</div>
 						</div>
 
 						<div className="project__item--link">
