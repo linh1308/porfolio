@@ -10,7 +10,7 @@ const Home = () => {
 				<div className="home__content">
 					<p className="title">Hi 👋, My name is Linh</p>
 					<Typical
-						steps={["I'm front-end developer 😊", 1000, "I'm looking for intern front-end job 🔎", 1500, "Please check my porfolio 😎", 1000]}
+						steps={["I'm front-end developer 😊", 1000, "I'm looking for front-end job 🔎", 1500, "Please check my portfolio 😎", 1000]}
 						loop={Infinity}
 						wrapper="p"
 					/>

@@ -20,8 +20,8 @@ const About = () => {
                     </div>
 
                     <div className="desc">
-                        I am Fontend developer and i am looking for Frontend developer intern. My goal is improve my knowledge and skills.
-                        After that, i want to learn Backend skill and become Fullstack developer.
+                        I am Front-end developer and i am looking for Front-end job. My goal is improve my knowledge and skills.
+                        After that, i want to learn Back-end skill and become Fullstack developer.
                     </div>
                 </div>
             </div>
